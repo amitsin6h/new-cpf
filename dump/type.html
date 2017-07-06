@@ -1,0 +1,29 @@
+<html>
+<head>
+        
+        </head>
+<body>
+    
+   <p id="tag-line"></p>
+
+</body>
+<script src="vendor/typewriter/typewriter.js"></script>
+<script>
+var app = document.getElementById('tag-line');
+
+app.style.fontSize="30px";
+
+
+var typewriter = new Typewriter(app, {
+    loop: true
+});
+
+typewriter.typeString('Global Think Tank')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('In Persuite of Cyber Peace')
+    .pauseFor(2500)
+    .deleteChars(7)
+    .start();
+</script>
+</html>
